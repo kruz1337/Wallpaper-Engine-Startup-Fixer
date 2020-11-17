@@ -29,13 +29,14 @@ namespace Wallpaper_Engine_Fixer
             applyBtn.TabIndex = 0;
         }
 
-        public static void CreateShortcut(string shortcutName, string shortcutPath, string targetFileLocation)
+        private void CreateShortcut(string shortcutName, string shortcutPath, string targetFileLocation)
         {
             string shortcutLocation = System.IO.Path.Combine(shortcutPath, shortcutName + ".lnk");
             WshShell shell = new WshShell();
             IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutLocation);
-            shortcut.Description = "*DONT DELETE!* - Created By Wallpaper Engine Fixer";
+            shortcut.Description = "*DON'T DELETE!* - Created By Wallpaper Engine Fixer";
             shortcut.TargetPath = targetFileLocation;
+            shortcut.WorkingDirectory = textBox1.Text;
             shortcut.Save();
         }
 
