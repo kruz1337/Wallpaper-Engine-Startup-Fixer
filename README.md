@@ -1,6 +1,8 @@
 ## What does it do?
 It solves this problem by creating a BAT file suitable for the Wallpaper Engine application to the windows startup folder.
 
+![Image of RequestX International Developer Group on Discord](https://raw.githubusercontent.com/Kruziikrel1/Wallpaper-Engine-Startup-Fixer/main/thumbnail.png)
+
 ## How to build project?
 * First of all you should download project files on project page or clone this repository from GitBash or GitHub Desktop on your PC. [Wallpaper-Engine-Startup-Fixer.zip](https://github.com/Kruziikrel1/Wallpaper-Engine-Startup-Fixer)
 
